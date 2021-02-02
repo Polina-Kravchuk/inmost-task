@@ -1,0 +1,21 @@
+.gradient{
+  background-color: black;
+  color: white;
+
+
+  display: flex;
+  justify-content: space-between; /*эл-ты контейнера займут крайние положения*/
+  align-items: center;
+}
+.toolbar__button{
+  background-color: black;
+  color: white;
+}
+.toolbar__input{
+  height: 28px;
+  width: 250px;
+  margin-left: 16px;
+}
+.toolbar__favorite{
+  margin-right: 16px;
+}
