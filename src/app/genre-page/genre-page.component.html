@@ -1,15 +1,21 @@
 
 <mat-toolbar class="gradient">
-
   <div>
     <button class="toolbar__button" mat-raised-button [routerLink]="'/'">Back</button>
     <input class="toolbar__input">
   </div>
-
   <div>
     <mat-icon class="toolbar__favorite" matBadge="15" matBadgeColor="primary">favorite</mat-icon>
   </div>
-
 </mat-toolbar>
 
+<div>
+  <div class="genre__" *ngFor="let album of albumView">
+    <div>{{album.name}} </div>
+    <img [src]='album | albumToImage' >
+  </div>
+
+</div>
+
+<img src="https://lh3.googleusercontent.com/proxy/w2mKD9P-ZSbSfrXN4e3OGUDgSP4LmTRFFw2rCaIEf-G9h89J7NfbGK0gLhmMyAU3YS-oTdSaw_aehrViH3P6Hl3iaBKslQMGa4aPuldBIQ">
 
